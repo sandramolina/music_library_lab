@@ -36,4 +36,3 @@ import repositories.artist_repository as artist_repository
 #tests the update function
 #album1.genre = "Rock Pop"
 #album_repository.update(album1)
-

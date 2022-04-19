@@ -47,3 +47,7 @@ def update(album):
     sql = "UPDATE albums SET (title, genre, artist_id) = (%s, %s, %s) WHERE id = %s"
     values = [album.title, album.genre, album.artist.id, album.id]
     run_sql(sql, values)
+
+#I run this code in Postico and it worked but not sure how to add this to the file. 
+# def filter_artist_by_name(artist_name):
+#     sql = "SELECT alb.title, alb.genre, art.artist_name from albums as alb INNER JOIN artists as art ON alb.artist_id = art.id WHERE art.artist_name = %s"
