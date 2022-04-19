@@ -3,12 +3,12 @@ from models.album import Album
 import repositories.album_repository as album_repository
 import repositories.artist_repository as artist_repository
 
-artist1 = Artist("Madonna")
-artist_repository.save(artist1)
+# artist1 = Artist("Madonna")
+# artist_repository.save(artist1)
 
-artist1.change_name("Madonna Queen of Pop")
+# artist1.change_name("Madonna Queen of Pop")
 
-artist_repository.update(artist1)
+# artist_repository.update(artist1)
 
 # artist2 = Artist("Cher")
 # artist_repository.save(artist2)
@@ -16,7 +16,8 @@ artist_repository.update(artist1)
 
 # artist_repository.select_all()
 
-# artist_repository.select(3)
+#After adding the if statement to select(id) if we chose an id that does not exist. The program wont crash
+#print(artist_repository.select(2))
 
 # artist_repository.delete_all()
 
