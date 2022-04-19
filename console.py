@@ -4,7 +4,7 @@ import repositories.album_repository as album_repository
 import repositories.artist_repository as artist_repository
 
 artist1 = Artist("Madonna")
-# artist_repository.save(artist1)
+artist_repository.save(artist1)
 
 artist1.change_name("Madonna Queen of Pop")
 

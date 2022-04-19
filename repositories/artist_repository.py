@@ -26,6 +26,7 @@ def select(id):
     sql = "SELECT * FROM artists WHERE id=%s"
     values = [id]
     result = run_sql(sql, values)[0]
+    #we need to add here a the if just to make sure the program wont crash
     if result is not None:
         artist = Artist(result['artist_name'], result['id'])
     return artist
@@ -40,6 +41,6 @@ def delete(id):
     run_sql(sql, values)
 
 def update(artist):
-    sql = "UPDATE artists SET (artist_name) = (%s) WHERE id=%s"
+    sql = "UPDATE artists SET artist_name = %s WHERE id=%s"
     values = [artist.artist_name, artist.id]
     run_sql(sql, values)
