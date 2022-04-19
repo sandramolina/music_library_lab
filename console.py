@@ -33,6 +33,7 @@ import repositories.artist_repository as artist_repository
 # album_repository.delete_all()
 
 # album_repository.delete(6)
-
-
+#tests the update function
+#album1.genre = "Rock Pop"
+#album_repository.update(album1)
 
